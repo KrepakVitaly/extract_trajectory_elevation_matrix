@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+# coding: utf-8
 """Example Google style docstrings.
 
 Example:
@@ -31,7 +31,7 @@ Todo:
 """
 import numpy as np
 import scipy
-from osgeo import gdal  # https://pythongisandstuff.wordpress.com/2016/04/13/installing-gdal-ogr-for-python-on-windows/
+from osgeo import gdal
 import sys
 
 class TrajectoryElevationMatrixExtractor():
@@ -182,3 +182,4 @@ if __name__ == '__main__':
     vmax = 1 # minimum value in your data (will be white in the output)
     ds = gdal.Translate('fused.png', '../../srtm_dumps/srtm_31_05.tif', format='PNG', outputType=gdal.GDT_Byte, scaleParams=[[vmin,vmax]])
     ds = None
+
